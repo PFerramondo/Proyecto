@@ -1,0 +1,31 @@
+### obtener todos los clientes
+GET http://localhost:3000/api/clientes
+
+### obtener un cliente
+GET http://localhost:3000/api/clientes/123456789
+
+### crear cliente
+POST http://localhost:3000/api/clientes
+Content-Type: application/json
+
+{
+    "dni": 778844553,
+    "nombre": "Juan",
+    "apellido": "Perez",
+    "direccion": "Calle A 123",
+    "mail": "juan@example.com",
+    "telefono": 2477123456,
+}
+
+
+PUT http://localhost:3000/api/clientes/123456789
+Content-Type: application/json
+
+{
+    "dni": 987654321,
+    "nombre": "Martin",
+    "apellido": "Palermo",
+    "direccion": "Brandsen 805",
+    "mail": "boca@example.com",
+    "telefono": 11666666
+}
